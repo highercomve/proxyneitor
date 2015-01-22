@@ -1,0 +1,5 @@
+#!/usr/bin/ruby
+
+require "proxyneitor"
+
+Proxyneitor::CLI.start(ARGV)
