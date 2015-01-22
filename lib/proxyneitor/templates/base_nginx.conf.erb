@@ -43,7 +43,6 @@ http {
   ##
   # Virtual Host Configs
   ##
-  include /etc/nginx/conf.d/*.conf;
-  include /etc/nginx/sites-enabled/*;
-  include <%= File.join(root, 'Proxies/*/nginx.conf') %>;
+  include <%= File.join(nginx_folder, 'conf.d','*.conf') %>;
+  include <%= File.join(nginx_folder, 'sites-enabled','*') %>;
 }
